@@ -1,9 +1,9 @@
 import PropTypes from 'prop-types';
 
-const Card = ({ card }) => {
+const Card = ({ card, handleAddToTeam }) => {
   const { name, age, role, image, country, salary } = card;
   return (
-    <div>
+    <div className="">
       <div className="card hero-overlay bg-opacity-85">
         <figure>
           <img className="rounded-full w-24" src={image} alt="car!" />
@@ -29,7 +29,12 @@ const Card = ({ card }) => {
             </p>
           </div>
           <div className="card-actions justify-center">
-            <button className="btn btn-primary capitalize">Add to Team</button>
+            <button
+              onClick={() => handleAddToTeam(card)}
+              className="btn btn-primary capitalize"
+            >
+              Add to Team
+            </button>
           </div>
         </div>
       </div>
@@ -37,6 +42,9 @@ const Card = ({ card }) => {
   );
 };
 
-Card.propTypes = {};
+Card.propTypes = {
+  card: PropTypes.object.isRequired,
+  handleAddToTeam: PropTypes.func.isRequired,
+};
 
 export default Card;
