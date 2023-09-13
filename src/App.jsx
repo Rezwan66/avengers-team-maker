@@ -3,6 +3,7 @@ import './App.css';
 import Basket from './components/Basket/Basket';
 import Cards from './components/Cards/Cards';
 import Header from './components/Header';
+import Swal from 'sweetalert2';
 
 function App() {
   const [selected, setSelected] = useState([]);
@@ -10,9 +11,12 @@ function App() {
   const handleAddToTeam = card => {
     const isClicked = selected.find(sel => sel.id === card.id);
     if (isClicked) {
-      return alert(
-        'Already Selected. You cannot pick a team Member several times'
-      );
+      return Swal.fire({
+        title: 'Error!',
+        text: 'Already Selected. You cannot pick a Team Member several times',
+        icon: 'warning',
+        confirmButtonText: 'Cool',
+      });
     }
     setSelected([...selected, card]);
   };
