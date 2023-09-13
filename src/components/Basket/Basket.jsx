@@ -4,7 +4,7 @@ const Basket = ({ selected, remaining, cost }) => {
   //   console.log(selected);
   return (
     <div>
-      <div className="bg-white rounded-md text-primary card-body">
+      <div className="bg-white bg-opacity-90 rounded-md text-primary card-body">
         <h3 className="text-3xl font-bold ">
           Members Selected: {selected.length}
         </h3>
