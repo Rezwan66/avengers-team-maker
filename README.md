@@ -1,3 +1,16 @@
+# Avengers Assemble!
+
+A simple React single page application (SPA), that can be used to assemble a team of Avengers characters, with a limited budget.
+
+Built using React library, tailwind CSS, Daisy UI, and data generated with the help of ChatGPT.
+
+## React Concepts Implemented
+
+- **Components:** App.jsx, Header.jsx, Cards.jsx, Card.jsx, Basket.jsx
+- **Hooks:** useState(), useEffect()
+- **Prop drilling**
+- **Event Handling**
+
 # React + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
