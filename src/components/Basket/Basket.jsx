@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 
-const Basket = ({ selected }) => {
+const Basket = ({ selected, remaining, cost }) => {
   //   console.log(selected);
   return (
     <div>
@@ -8,8 +8,10 @@ const Basket = ({ selected }) => {
         <h3 className="text-3xl font-bold ">
           Members Selected: {selected.length}
         </h3>
-        <p className="text-xl">Remaining balance: </p>
-        <p className="text-xl mb-6">Total Cost: </p>
+        <p className="text-xl font-semibold">Remaining Balance:</p>
+        <p className="text-xl font-semibold">$ {remaining}</p>
+        <p className="text-xl font-semibold">Total Cost:</p>
+        <p className="text-xl font-semibold mb-6">$ {cost}</p>
 
         {selected.map((item, idx) => (
           <li key={idx} className="text-left w-[180px] mx-auto">
@@ -23,6 +25,8 @@ const Basket = ({ selected }) => {
 
 Basket.propTypes = {
   selected: PropTypes.array.isRequired,
+  remaining: PropTypes.number.isRequired,
+  cost: PropTypes.number.isRequired,
 };
 
 export default Basket;
