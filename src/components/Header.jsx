@@ -1,8 +1,8 @@
 const Header = () => {
   return (
     <div>
-      <div className="navbar bg-primary-content text-primary-content rounded-full">
-        <a className="btn btn-ghost normal-case text-xl text-primary w-full rounded-full">
+      <div className="navbar bg-primary hero-overlay bg-opacity-40 text-primary-content rounded-full mb-16">
+        <a className="btn btn-ghost normal-case text-xl text-white w-full rounded-full">
           Avengers Team
         </a>
       </div>
