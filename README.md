@@ -4,12 +4,16 @@ A simple React single page application (SPA), that can be used to assemble a tea
 
 Built using React library, tailwind CSS, Daisy UI, and data generated with the help of ChatGPT.
 
-## React Concepts Implemented
+### React Concepts Implemented
 
 - **Components:** App.jsx, Header.jsx, Cards.jsx, Card.jsx, Basket.jsx
 - **Hooks:** useState(), useEffect()
 - **Prop drilling**
 - **Event Handling**
+
+### Live Sites:
+- [Netlify](https://astonishing-dolphin-9743ea.netlify.app/)
+- [Surge](https://avengers-assemble.surge.sh/)
 
 # React + Vite
 
