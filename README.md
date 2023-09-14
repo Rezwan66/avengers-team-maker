@@ -4,16 +4,20 @@ A simple React single page application (SPA), that can be used to assemble a tea
 
 Built using React library, tailwind CSS, Daisy UI, and data generated with the help of ChatGPT.
 
-### React Concepts Implemented
+### React Core Concepts Implemented:
 
 - **Components:** App.jsx, Header.jsx, Cards.jsx, Card.jsx, Basket.jsx
 - **Hooks:** useState(), useEffect()
-- **Prop drilling**
+- **Prop Drilling**
 - **Event Handling**
 
 ### Live Sites:
-- [Netlify](https://astonishing-dolphin-9743ea.netlify.app/)
-- [Surge](https://avengers-assemble.surge.sh/)
+- <a href="https://astonishing-dolphin-9743ea.netlify.app/" target="_blank">Netlify</a>
+- <a href="https://avengers-assemble.surge.sh/" target="_blank">Surge</a>
+
+### Screenshot showing functionalities:
+![screenshot](https://github.com/Rezwan66/avengers-team-maker/assets/63563859/f3b90810-d71c-4eaa-a424-9c9c42537ebd)
+
 
 # React + Vite
 
